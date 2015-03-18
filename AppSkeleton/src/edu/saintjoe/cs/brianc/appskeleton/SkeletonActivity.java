@@ -18,6 +18,7 @@ import com.google.devtools.simple.runtime.components.android.HorizontalArrangeme
 
 import com.google.devtools.simple.runtime.events.EventDispatcher;
 
+// This is a gratuitous comment intended to test upstream fetches
 
 // This is the only class file for our app
 public class SkeletonActivity extends Form implements HandlesEventDispatching {
