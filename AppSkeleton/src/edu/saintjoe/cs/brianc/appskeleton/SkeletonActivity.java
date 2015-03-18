@@ -1,3 +1,6 @@
+// Two notes here:
+//   1. You must rename this and put in your username
+//   2. You must comment out this line to compile with "javac"
 package edu.saintjoe.cs.brianc.appskeleton;
 
 /* App Skeleton
