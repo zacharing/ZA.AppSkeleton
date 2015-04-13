@@ -5,8 +5,12 @@ package edu.saintjoe.cs.brianc.appskeleton;
 
 /* App Skeleton
  * Written by Brian Capouch 17 March 2015
- * This app will serve as the basis for student project apps
+ *   Forked by Zach Aring
+ * This is my demonstration copy for in class
+ *   we are going to add a getter and setter to our app class
+ *   13 April 2015
  */
+
 
 // Import directives tell Eclipse which components you intend to use
 import com.google.devtools.simple.runtime.components.Component;
