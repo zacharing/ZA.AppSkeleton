@@ -19,7 +19,7 @@ import com.google.devtools.simple.runtime.components.android.Button;
 import com.google.devtools.simple.runtime.components.android.Form;
 import com.google.devtools.simple.runtime.components.android.Label;
 import com.google.devtools.simple.runtime.components.android.HorizontalArrangement;
-
+import com.google.devtools.simple.runtime.components.android.TextBox;
 import com.google.devtools.simple.runtime.events.EventDispatcher;
 
 // This is the only class file for our app
@@ -40,6 +40,7 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
 	private Button retrieveButton;
 	private Label resultLabel;
 	private Button saveButton;
+	private TextBox inputBox;
 
  // Java Bridger apps all use $define() in place of main()
  void $define() {
@@ -56,6 +57,7 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
      // Now create the user interface
      saveButton = new Button(line1,"Save");
      retrieveButton = new Button(line1, "Retrieve");
+     inputBox = new TextBox(line2);
      resultLabel = new Label(line2,"");
      
      
