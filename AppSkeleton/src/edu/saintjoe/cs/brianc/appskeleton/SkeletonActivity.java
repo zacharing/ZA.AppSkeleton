@@ -42,6 +42,9 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
 	private Button saveButton;
 	private TextBox inputBox;
 
+	// Variable to hold our saved value for later retrieval
+	private int savedValue;
+	
  // Java Bridger apps all use $define() in place of main()
  void $define() {
  	
@@ -74,7 +77,8 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
  	
  	// This code is equivalent to the "Blocks" part of App Inventor
 	    if (component.equals(saveButton) && eventName.equals("Click")){
-	    	resultLabel.Text("Empujado!!");
+	    	savedValue = Integer.parseInt(inputBox.Text());
+	    	resultLabel.Text(inputBox.Text());
 	        return true;
 	     } // end dispatch '+' press
 	
