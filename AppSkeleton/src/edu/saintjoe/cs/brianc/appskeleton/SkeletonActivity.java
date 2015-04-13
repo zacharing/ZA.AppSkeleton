@@ -37,8 +37,9 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
 	private HorizontalArrangement line2;
 
 	// Next our two components
-	private Button dumbButton;
+	private Button retrieveButton;
 	private Label resultLabel;
+	private Button saveButton;
 
  // Java Bridger apps all use $define() in place of main()
  void $define() {
@@ -53,7 +54,8 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
      line2 = new HorizontalArrangement(this);
      
      // Now create the user interface
-     dumbButton = new Button(line1,"Empujeme");   
+     saveButton = new Button(line1,"Save");
+     retrieveButton = new Button(line1, "Retrieve");
      resultLabel = new Label(line2,"");
      
      
@@ -69,7 +71,7 @@ public class SkeletonActivity extends Form implements HandlesEventDispatching {
          Object[] args) {
  	
  	// This code is equivalent to the "Blocks" part of App Inventor
-	    if (component.equals(dumbButton) && eventName.equals("Click")){
+	    if (component.equals(saveButton) && eventName.equals("Click")){
 	    	resultLabel.Text("Empujado!!");
 	        return true;
 	     } // end dispatch '+' press
